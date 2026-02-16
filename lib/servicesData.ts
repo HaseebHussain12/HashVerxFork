@@ -16,15 +16,17 @@ export const servicesData: Record<string, ServiceDetail> = {
     title: "Custom Software Development",
     subtitle: "Bespoke solutions tailored to your unique business needs.",
     slug: "custom-software-development",
-    intro:
-      "We create custom software solutions that perfectly align with your business objectives. Our team of expert developers builds scalable, maintainable applications that drive growth and efficiency.",
+    intro: `A well-crafted SaaS development service can catalyze businesses looking to tap into digital technology. It can create functional, adaptable, and secure software to provide excellent user experiences.
+ 
+From ideation to deployment, Hashverx partners with you to create user-centric SAAS software solutions that can drive innovation and growth.`,
     sections: [
       {
         id: "overview",
         title: "Overview",
         type: "overview",
-        content:
-          "We create custom software solutions that perfectly align with your business objectives. Our team of expert developers builds scalable, maintainable applications that drive growth and efficiency."
+        content: `A well-crafted SaaS development service can catalyze businesses looking to tap into digital technology. It can create functional, adaptable, and secure software to provide excellent user experiences.
+ 
+From ideation to deployment, Hashverx partners with you to create user-centric SAAS software solutions that can drive innovation and growth.`
       },
       {
         id: "what-we-build",
@@ -109,17 +111,17 @@ export const servicesData: Record<string, ServiceDetail> = {
   },
   "odoo-erp-services": {
     title: "Odoo ERP Services",
-    subtitle: "Implement, customize, and scale with Odoo.",
+    subtitle: "Odoo Implementation, Done Right.",
     slug: "odoo-erp-services",
     intro:
-      "Full Odoo ERP implementation, customization, and support. We help businesses streamline operations with Odoo's powerful modules and our expert integration services.",
+      "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don’t hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line).",
     sections: [
       {
         id: "overview",
         title: "Overview",
         type: "overview",
         content:
-          "Full Odoo ERP implementation, customization, and support. We help businesses streamline operations with Odoo's powerful modules and our expert integration services."
+          "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don’t hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line)."
       },
       {
         id: "odoo-services",

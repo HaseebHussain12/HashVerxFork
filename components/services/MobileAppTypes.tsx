@@ -1,34 +1,32 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import businessAppsImg from '../../assets/Mobile/BusinessApps.jpg';
-import marketplaceImg from '../../assets/Mobile/marketingplace.jpg';
-import erpImg from '../../assets/Mobile/ERP.jpg';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import businessAppsImg from "../../assets/Mobile/BusinessApps.jpg";
+import marketplaceImg from "../../assets/Mobile/marketingplace.jpg";
+import erpImg from "../../assets/Mobile/ERP.jpg";
 
 const appTypes = [
   {
-    id: 'business',
-    title: 'Business Apps',
+    id: "business",
+    title: "AI app development",
     image: businessAppsImg,
-    hoverText:
-      'We design and develop scalable business apps that streamline operations, improve productivity, and drive digital transformation. Our custom business application development services include CRM systems, workflow automation, analytics dashboards, and enterprise mobility solutions. Built with secure architecture and modern technologies, our business apps help organizations optimize processes, reduce costs, and enable data-driven decision-making across web and mobile platforms.',
+    hoverText: `Our AI developers can build AI-powered apps from scratch or transform your existing app into an intelligent solution, integrating features like personalized insights, predictive analytics, and natural language processing.`
   },
   {
-    id: 'marketplace',
-    title: 'Marketplace Apps',
+    id: "marketplace",
+    title: "Native mobile app development",
     image: marketplaceImg,
-    hoverText:
-      'Our marketplace app development services help businesses build feature-rich, scalable, and secure multi-vendor platforms. We create custom marketplace apps with vendor management, product listings, payment gateway integration, order tracking, and real-time analytics. Designed for high performance and user engagement, our marketplace solutions support eCommerce growth, seamless transactions, and efficient buyer-seller interactions across web and mobile ecosystems.',
+    hoverText: `Create mobile apps designed to leverage the full capabilities of iOS and Android, delivering high-performance, responsiveness, and reliability to deliver an intuitive and seamless experience to your users.`
   },
   {
-    id: 'erp',
-    title: 'ERP-Integrated Apps',
+    id: "erp",
+    title: "Cross-platform solutions",
     image: erpImg,
     hoverText:
-      'We develop ERP-integrated apps that seamlessly connect with systems like SAP, Oracle, Microsoft Dynamics, and Odoo. Our ERP application integration services enable real-time data synchronization, process automation, and unified reporting across departments. By integrating mobile and web apps with ERP platforms, we help businesses improve operational efficiency, data accuracy, and scalability while maintaining security and compliance.',
-  },
+      "Our developers simplify the development process with cross-platform solutions that ensure a consistent user experience across iOS, Android, and other devices, helping you expand your reach without compromising quality or functionality."
+  }
 ];
 
 export default function MobileAppTypes() {
@@ -38,7 +36,7 @@ export default function MobileAppTypes() {
     <section className="py-28 md:py-36 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
-          Enterprise App Development Services
+          Mobile app development capabilities
         </h2>
         <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
           {appTypes.map((item) => {
@@ -63,8 +61,8 @@ export default function MobileAppTypes() {
                 <div
                   className={`absolute inset-0 p-5 flex flex-col justify-between bg-black/60 pt-14 pb-20 transition-all duration-500 ease-out ${
                     isHovered
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-4 pointer-events-none'
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-4 pointer-events-none"
                   }`}
                 >
                   <p className="text-white text-sm leading-relaxed overflow-y-auto flex-1">
@@ -72,7 +70,9 @@ export default function MobileAppTypes() {
                   </p>
                 </div>
                 <div className="absolute top-0 left-0 right-0 p-5 z-10">
-                  <h3 className="text-xl font-bold text-white drop-shadow-md">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-white drop-shadow-md">
+                    {item.title}
+                  </h3>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-5 flex justify-center z-10">
                   <Link

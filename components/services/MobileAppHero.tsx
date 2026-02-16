@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import mainImage from '../../assets/Mobile/main.jpg';
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import mainImage from "../../assets/Mobile/main.jpg";
 
 export default function MobileAppHero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,7 +17,9 @@ export default function MobileAppHero() {
       { threshold: 0.1 }
     );
     if (ref.current) observer.observe(ref.current);
-    return () => { if (ref.current) observer.unobserve(ref.current!); };
+    return () => {
+      if (ref.current) observer.unobserve(ref.current!);
+    };
   }, []);
 
   return (
@@ -38,23 +40,34 @@ export default function MobileAppHero() {
         className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24"
       >
         <div
-          className={`rounded-2xl bg-black/50 backdrop-blur-sm px-6 py-8 md:px-10 md:py-10 max-w-2xl transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          className={`rounded-2xl bg-black/50 backdrop-blur-sm px-6 py-8 md:px-10 md:py-10 max-w-5xl transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           <p className="text-[#51CFDF] text-sm font-semibold uppercase tracking-widest mb-2">
             Mobile App Development
           </p>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-            Custom Mobile Apps for Tomorrow
+            Engage your customers with innovative and future-ready mobile
+            applications powered by AI.
           </h1>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#51CFDF] hover:bg-[#6dd9e8] text-white px-8 py-4 rounded-lg font-semibold text-sm transition-all shadow-lg hover:shadow-xl hover:scale-105 transform uppercase tracking-wide"
           >
             <span>Make Your App Now</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </Link>
         </div>

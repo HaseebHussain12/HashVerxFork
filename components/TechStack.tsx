@@ -259,7 +259,7 @@ export default function TechStack() {
   const duplicatedLanguages3 = [...column3Languages, ...column3Languages, ...column3Languages, ...column3Languages];
 
   return (
-    <section className="py-20 bg-white relative">
+    <section className="py-16 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Sliding Columns */}

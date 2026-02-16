@@ -68,6 +68,95 @@ export default function OdooLayout() {
       />
       <ServiceTypesSection sectionTitle="Our Odoo Services" items={TYPES_ITEMS} />
 
+      {/* What Makes Odoo an Attractive Choice Section */}
+      <section className="py-28 md:py-36 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0859B2] mb-16">
+            What Makes Odoo an Attractive Choice
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Open Source ERP */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" fill="none" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Open Source ERP</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Being an open-source system means you can access the source code and customize the software the way you want to fit your specific workflows.
+              </p>
+            </div>
+
+            {/* 44K+ Applications */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">44K+ Applications</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Odoo has an app for almost everything. With 44,000+ community apps, it offers the world's largest business app marketplace.
+              </p>
+            </div>
+
+            {/* Modular in Nature */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Modular in Nature</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Its modular design lets you implement parts of the solution or the entire system, paying only for the modules you need now, with the flexibility to scale later.
+              </p>
+            </div>
+
+            {/* Global Accounting Practice */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Global Accounting Practice</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Supporting over 70 countries, Odoo ensures seamless global accounting by complying with regional tax laws, financial regulations, and reporting standards.
+              </p>
+            </div>
+
+            {/* Low-Cost Solution */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Low-Cost Solution</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Odoo comes in two versions. The Community version is free for startups or companies on a tight budget. Enterprise Edition offers advanced features with affordable pricing.
+              </p>
+            </div>
+
+            {/* Python-Based Foundation */}
+            <div className="p-8 rounded-2xl bg-white border-2 border-[#51CFDF]/20 shadow-lg hover:shadow-xl hover:border-[#51CFDF]/50 transition-all duration-300">
+              <div className="w-12 h-12 text-[#51CFDF] mb-4">
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Python-Based Foundation</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Python's popularity means you'll find skilled developers easily compared to ERPs (like SAP, Microsoft Dynamics 365, etc.) that use proprietary languages, making development and maintenance more accessible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section ref={cardsRef} className="py-28 md:py-36 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#0859B2] mb-16">What we offer</h2>

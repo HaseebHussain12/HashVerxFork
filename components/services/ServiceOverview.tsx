@@ -57,9 +57,9 @@ export default function ServiceOverview({
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-6'
             }`}
           >
-            <p className="text-[#51CFDF] text-sm font-semibold uppercase tracking-wider mb-4">
+            <h2 className="text-[#51CFDF] text-3xl md:text-4xl font-bold uppercase tracking-wider mb-4">
               {label}
-            </p>
+            </h2>
             <p className="text-base md:text-lg text-gray-900 leading-relaxed mb-8">
               {intro}
             </p>

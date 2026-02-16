@@ -2,7 +2,16 @@
 
 import { useState } from 'react';
 
-const faqs = [
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface ServiceFAQsProps {
+  faqs?: FAQ[];
+}
+
+const defaultFaqs: FAQ[] = [
   {
     question: 'Can you upgrade our legacy web app?',
     answer: 'Yes, we specialize in modernizing legacy applications. We can upgrade your existing system to use modern technologies, improve performance, enhance security, and add new features while maintaining your current functionality.',
@@ -25,7 +34,7 @@ const faqs = [
   },
 ];
 
-export default function ServiceFAQs() {
+export default function ServiceFAQs({ faqs = defaultFaqs }: ServiceFAQsProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
@@ -76,7 +85,27 @@ export default function ServiceFAQs() {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-4">
-                  <p className="text-base text-gray-900 leading-relaxed">{faq.answer}</p>
+                  {faq.answer.includes('•') ? (
+                    <div className="text-base text-gray-900 leading-relaxed">
+                      {faq.answer.split('\n').map((line, lineIndex) => {
+                        const trimmedLine = line.trim();
+                        if (trimmedLine.startsWith('•')) {
+                          return (
+                            <div key={lineIndex} className="ml-4 mb-2">
+                              {trimmedLine}
+                            </div>
+                          );
+                        }
+                        return trimmedLine ? (
+                          <p key={lineIndex} className={lineIndex > 0 ? 'mt-3 mb-2' : 'mb-2'}>
+                            {trimmedLine}
+                          </p>
+                        ) : null;
+                      })}
+                    </div>
+                  ) : (
+                    <p className="text-base text-gray-900 leading-relaxed">{faq.answer}</p>
+                  )}
                 </div>
               )}
             </div>

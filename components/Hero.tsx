@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden bg-white py-16 md:py-20">
+    <section className="relative flex items-center justify-center overflow-hidden bg-white py-12 md:py-16">
       {/* Video Container */}
       <div className="w-full flex items-center justify-center">
         <div className="w-[70%] max-w-4xl aspect-video">

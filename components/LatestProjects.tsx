@@ -27,127 +27,98 @@ const projects: Project[] = [
     id: "Yunuak",
     name: "Yunuak",
     description:
-      "A powerful document collaboration platform that combines documents, spreadsheets, and applications into one unified workspace. We delivered a seamless user experience with real-time collaboration, advanced automation, and intuitive design that transforms how teams work together.",
+      "Yunuak is a powerful retail POS and warehouse management system designed to simplify business operations. It allows users to create quotations, estimates, and orders while managing real-time inventory and product stock across warehouses. With both mobile and web access, businesses can monitor sales history, track inventory movement, and streamline daily operations from anywhere",
     image: codaImage,
     type: "Productivity",
     features: [
-      "Real-time Collaboration",
-      "Document Management",
-      "Advanced Automation",
-      "Unified Workspace"
+      "Retail POS & Order Management",
+      "Inventory & Warehouse Tracking",
+      "History & Reporting",
+      "Multi-Platform Access & Support"
     ]
   },
   {
     id: "Forward-Thinking-Fitness",
     name: "Forward Thinking Fitness",
     description:
-      "An immersive entertainment platform bringing the best of drama and pop culture to audiences worldwide. We built a streaming solution with personalized recommendations, social features, and seamless playback across all devices, creating an engaging viewing experience.",
+      "Forward Fitness Thinking (FTF) is a smart gym and fitness management system for trainers, staff, and clients. It offers mobile apps and a web portal to manage workouts, nutrition plans, habit tracking, mood monitoring, and class scheduling. With AI-powered insights, analytics, and multi-platform access, FTF helps fitness businesses streamline operations, improve client engagement, and deliver better training results efficiently.",
     image: dramaPopImage,
     type: "Entertainment",
     features: [
-      "Streaming Platform",
-      "Personalized Recommendations",
-      "Social Features",
-      "Multi-device Playback"
+      "Client & Staff Management System",
+      "Workout, Nutrition & Habit Tracking",
+      "Class Scheduling & Trainer Interaction",
+      "AI-Powered Analytics & Multi-Platform Access"
     ]
   },
   {
     id: "Hammers-Tounges",
     name: "Hammers & Tounges",
     description:
-      "A comprehensive telemedicine platform connecting patients with healthcare providers. We developed a robust system featuring video consultations, health records management, prescription services, and AI-powered symptom checking to make healthcare accessible and convenient.",
+      "HT (Hammers & Tongs) is a powerful online auction platform for buyers, sellers, and administrators. Users can register, list items, and participate in live auctions with advanced bidding features like popcorn and phantom bidding. With real-time notifications, multi-winner support, and web and mobile access, it delivers a secure and scalable auction experience.",
     image: healthTapImage,
     type: "Healthcare",
     features: [
-      "Video Consultations",
-      "Health Records Management",
-      "Prescription Services",
-      "AI Symptom Checking"
+      "Buyer, Seller & Admin Registration System",
+      "Live Auctions with Advanced Bidding Features",
+      "Multi-Winner Auctions & Real-Time Notifications",
+      "Web & Mobile Integrated Auction Platform"
     ]
   },
   {
-    id: "Liberty91",
-    name: "Hospitality Proquotes",
+    id: "HPQ",
+    name: "Hospitality ProQuotes",
     description:
-      "A modern social platform designed to connect communities and foster meaningful relationships. We created an engaging user experience with real-time messaging, content sharing, and community features that bring people together in innovative ways.",
+      "Hospitality ProQuotes is an efficient order and quotation management system designed for hospitality businesses. It helps users create quotations, manage orders, generate receipts, and apply taxes, discounts, and markups accurately. With web and mobile access, businesses can streamline billing processes, improve pricing control, and manage customer transactions easily from one centralized platform.",
     image: mahbubiImage,
-    type: "Social",
+    type: "Healthcare",
     features: [
-      "Real-time Messaging",
-      "Content Sharing",
-      "Community Features",
-      "Social Networking"
-    ],
-    hasDarkOverlay: true
-  },
-  {
-    id: "Spectra-Solar",
-    name: "Spectra Solar",
-    description:
-      "The ultimate road trip planning platform that helps travelers discover amazing places along their route. We built an intuitive mapping system with route optimization, point-of-interest discovery, and trip planning tools that make every journey unforgettable.",
-    image: roadTrippersImage,
-    type: "Travel",
-    features: [
-      "Route Optimization",
-      "Point of Interest Discovery",
-      "Trip Planning Tools",
-      "Interactive Maps"
+      "Order Taking & Quotation Management",
+      "Receipts, Taxes & Discount Handling",
+      "Pricing, Markups & Billing Automation",
+      "Web & Mobile Hospitality POS System"
     ]
   },
   {
-    id: "Luminary-Health",
-    name: "Luminary Health",
+    id: "HRM",
+    name: "HRM",
     description:
-      "A comprehensive delivery and logistics platform serving multiple markets. We developed a scalable solution with real-time tracking, multi-vendor support, payment integration, and efficient routing algorithms that ensure fast and reliable deliveries.",
-    image: snoonuImage,
-    type: "Logistics",
+      "This HRMS is a comprehensive web-based human resource management system designed to manage employees, attendance, communication, and performance tracking. It includes internal chat, calling, project management, and analytics tools to improve workforce productivity. The platform helps organizations streamline HR operations, monitor team performance, and enhance collaboration through one secure system.",
+    image: mahbubiImage,
+    type: "Healthcare",
     features: [
-      "Real-time Tracking",
-      "Multi-vendor Support",
-      "Payment Integration",
-      "Route Optimization"
+      "Employee Tracking & Attendance Management",
+      "Internal Chat & Calling System",
+      "Performance Monitoring & Analytics",
+      "Project & Task Management"
     ]
   },
   {
-    id: "Palplug",
-    name: "Palplug",
+    id: "Hospital Management System",
+    name: "Hospital Management System",
     description:
-      "A modern communication platform revolutionizing how teams collaborate and share information. We created a secure messaging system with end-to-end encryption, file sharing, video calls, and team management features that keep organizations connected.",
-    image: telegraphyImage,
-    type: "Communication",
+      "The Hospital Management System is a complete digital solution for managing patients, appointments, billing, pharmacy, and hospital operations. It enables healthcare providers to maintain accurate records, streamline workflows, and improve patient care. With staff management, reporting, and centralized data access, hospitals and clinics can operate more efficiently and deliver better services.",
+    image: mahbubiImage,
+    type: "Healthcare",
     features: [
-      "End-to-end Encryption",
-      "File Sharing",
-      "Video Calls",
-      "Team Management"
+      "Patient Records & Appointment Management",
+      "Billing, Pharmacy & Inventory Control",
+      "Doctor & Staff Management",
+      "Reports & Hospital Analytics"
     ]
   },
   {
-    id: "Dillon",
-    name: "Dillon",
+    id: "Real Estate Management System",
+    name: "Real Estate Management System",
     description:
-      "An innovative e-commerce platform that makes shopping fun and affordable. We built a mobile-first marketplace with personalized product discovery, social shopping features, and seamless checkout experiences that delight millions of users worldwide.",
-    image: wishImage,
-    type: "E-commerce",
+      "The Real Estate Management System is a modern platform designed to manage property listings, clients, leads, sales, and rental operations efficiently. It provides centralized data, transaction tracking, and reporting tools to improve decision-making. With automation and analytics features, real estate businesses can enhance customer engagement, streamline workflows, and grow operations effectively.",
+    image: mahbubiImage,
+    type: "Healthcare",
     features: [
-      "Mobile-first Marketplace",
-      "Product Discovery",
-      "Social Shopping",
-      "Seamless Checkout"
-    ]
-  },
-  {
-    id: "Low-Coder",
-    name: "Low Coder",
-    description:
-      "A next-generation code editor built for performance and collaboration. We developed a lightning-fast editor with real-time collaboration, AI-powered code assistance, and seamless Git integration that empowers developers to code more efficiently.",
-    image: zedImage,
-    type: "Developer Tools",
-    features: [
-      "Real-time Collaboration",
-      "AI Code Assistance",
-      "Git Integration",
-      "High Performance"
+      "Property Listing & Management",
+      "Client & Lead Tracking",
+      "Sales & Rental Management",
+      "Analytics & Reporting Dashboard"
     ]
   }
 ];
@@ -156,6 +127,7 @@ export default function LatestProjects() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
@@ -187,9 +159,9 @@ export default function LatestProjects() {
   }, []);
 
   return (
-    <section className="py-32 bg-white relative">
+    <section className="py-24 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Latest{" "}
           <span className="bg-gradient-to-r from-[#51CFDF] via-[#6dd9e8] to-[#51CFDF] bg-clip-text text-transparent">
             Projects
@@ -238,12 +210,14 @@ export default function LatestProjects() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="flex-shrink-0 rounded-lg p-8 flex flex-col justify-between relative text-white"
+                className="flex-shrink-0 rounded-lg p-8 flex flex-col justify-between relative text-white group"
                 style={{
                   minHeight: "400px",
                   width: "300px",
                   flexShrink: 0
                 }}
+                onMouseEnter={() => setHoveredCard(project.id)}
+                onMouseLeave={() => setHoveredCard(null)}
               >
                 {/* Background Image for all cards */}
                 <div className="absolute inset-0 rounded-lg overflow-hidden">
@@ -259,9 +233,21 @@ export default function LatestProjects() {
                 {/* Dark overlay for all cards */}
                 <div className="absolute inset-0 rounded-lg bg-gray-800/50"></div>
 
+                {/* Hover overlay with black background */}
+                <div
+                  className={`absolute inset-0 rounded-lg bg-black transition-opacity duration-300 ${
+                    hoveredCard === project.id ? "opacity-90" : "opacity-0"
+                  }`}
+                ></div>
+
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-between h-full">
-                  <div>
+                  {/* Heading and bullet points - hidden on hover */}
+                  <div
+                    className={`transition-opacity duration-300 ${
+                      hoveredCard === project.id ? "opacity-0" : "opacity-100"
+                    }`}
+                  >
                     <h3 className="text-3xl font-bold mb-6 text-white">
                       {project.name}
                     </h3>
@@ -273,7 +259,22 @@ export default function LatestProjects() {
                       ))}
                     </ul>
                   </div>
-                  <button className="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white rounded-full py-3 px-6 flex items-center justify-center gap-2 transition-all group">
+
+                  {/* Hover description - full width */}
+                  <div
+                    className={`absolute inset-0 rounded-lg flex items-center justify-center px-[10px] py-8 transition-opacity duration-300 ${
+                      hoveredCard === project.id
+                        ? "opacity-100"
+                        : "opacity-0 pointer-events-none"
+                    }`}
+                  >
+                    <p className="text-white text-sm leading-relaxed w-full">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  {/* Commented out Explore More button */}
+                  {/* <button className="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white rounded-full py-3 px-6 flex items-center justify-center gap-2 transition-all group">
                     <span className="text-sm font-medium">Explore More</span>
                     <div className="w-8 h-8 rounded-full bg-[#51CFDF] flex items-center justify-center group-hover:bg-[#6dd9e8] transition-colors">
                       <svg
@@ -292,7 +293,7 @@ export default function LatestProjects() {
                         />
                       </svg>
                     </div>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
