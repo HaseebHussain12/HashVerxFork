@@ -161,7 +161,7 @@ export default function LatestProjects() {
   return (
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-center mb-12">
           Latest{" "}
           <span className="bg-gradient-to-r from-[#51CFDF] via-[#6dd9e8] to-[#51CFDF] bg-clip-text text-transparent">
             Projects
@@ -210,90 +210,112 @@ export default function LatestProjects() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="flex-shrink-0 rounded-lg p-8 flex flex-col justify-between relative text-white group"
+                className="flex-shrink-0 relative transition-all duration-500 ease-out"
                 style={{
-                  minHeight: "400px",
-                  width: "300px",
-                  flexShrink: 0
+                  minHeight: "460px",
+                  width: "330px",
+                  flexShrink: 0,
+                  transform: hoveredCard === project.id ? "scale(1.02)" : "scale(1)",
+                  transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)"
                 }}
                 onMouseEnter={() => setHoveredCard(project.id)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                {/* Background Image for all cards */}
-                <div className="absolute inset-0 rounded-lg overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.name}
-                    fill
-                    className="object-cover"
-                    sizes="320px"
-                  />
-                </div>
-
-                {/* Dark overlay for all cards */}
-                <div className="absolute inset-0 rounded-lg bg-gray-800/50"></div>
-
-                {/* Hover overlay with black background */}
+                {/* Card Content Container */}
                 <div
-                  className={`absolute inset-0 rounded-lg bg-black transition-opacity duration-300 ${
-                    hoveredCard === project.id ? "opacity-90" : "opacity-0"
-                  }`}
-                ></div>
-
-                {/* Content */}
-                <div className="relative z-10 flex flex-col justify-between h-full">
-                  {/* Heading and bullet points - hidden on hover */}
-                  <div
-                    className={`transition-opacity duration-300 ${
-                      hoveredCard === project.id ? "opacity-0" : "opacity-100"
-                    }`}
-                  >
-                    <h3 className="text-3xl font-bold mb-6 text-white">
-                      {project.name}
-                    </h3>
-                    <ul className="space-y-2">
-                      {project.features.map((feature, index) => (
-                        <li key={index} className="text-base text-white">
-                          • {feature}
-                        </li>
-                      ))}
-                    </ul>
+                  className="rounded-lg p-8 flex flex-col justify-between relative text-white group h-full overflow-hidden transition-all duration-500"
+                >
+                  {/* Background Image for all cards with zoom effect */}
+                  <div className="absolute inset-0 rounded-lg overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      fill
+                      className={`object-cover transition-transform duration-700 ease-out ${
+                        hoveredCard === project.id ? "scale-110" : "scale-100"
+                      }`}
+                      sizes="320px"
+                    />
                   </div>
 
-                  {/* Hover description - full width */}
-                  <div
-                    className={`absolute inset-0 rounded-lg flex items-center justify-center px-[10px] py-8 transition-opacity duration-300 ${
-                      hoveredCard === project.id
-                        ? "opacity-100"
-                        : "opacity-0 pointer-events-none"
-                    }`}
-                  >
-                    <p className="text-white text-sm leading-relaxed w-full">
-                      {project.description}
-                    </p>
-                  </div>
+                  {/* Dark overlay for all cards */}
+                  <div className={`absolute inset-0 rounded-lg transition-opacity duration-500 ${
+                    hoveredCard === project.id ? "bg-gray-800/30" : "bg-gray-800/50"
+                  }`}></div>
 
-                  {/* Commented out Explore More button */}
-                  {/* <button className="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white rounded-full py-3 px-6 flex items-center justify-center gap-2 transition-all group">
-                    <span className="text-sm font-medium">Explore More</span>
-                    <div className="w-8 h-8 rounded-full bg-[#51CFDF] flex items-center justify-center group-hover:bg-[#6dd9e8] transition-colors">
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4.5 9L7.5 6L4.5 3"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                  {/* Hover overlay with black background - animated */}
+                  <div
+                    className={`absolute inset-0 rounded-lg bg-black transition-all duration-500 ${
+                      hoveredCard === project.id ? "opacity-90" : "opacity-0"
+                    }`}
+                    style={{
+                      transform: hoveredCard === project.id ? "scale(1)" : "scale(0.95)",
+                    }}
+                  ></div>
+
+                  {/* Content */}
+                  <div className="relative z-10 flex flex-col justify-between h-full">
+                    {/* Heading and bullet points - hidden on hover with slide animation */}
+                    <div
+                      className={`transition-all duration-500 ease-out ${
+                        hoveredCard === project.id 
+                          ? "opacity-0 -translate-y-4 scale-95" 
+                          : "opacity-100 translate-y-0 scale-100"
+                      }`}
+                    >
+                      <h3 className="text-3xl font-bold mb-6 text-white drop-shadow-lg">
+                        {project.name}
+                      </h3>
+                      <ul className="space-y-2">
+                        {project.features.map((feature, index) => (
+                          <li 
+                            key={index} 
+                            className="text-base text-white drop-shadow-md"
+                            style={{
+                              transitionDelay: `${index * 50}ms`
+                            }}
+                          >
+                            • {feature}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  </button> */}
+
+                    {/* Hover description - full width with slide-up animation */}
+                    <div
+                      className={`absolute inset-0 rounded-lg flex items-center justify-center px-4 pt-20 pb-20 transition-all duration-500 ease-out ${
+                        hoveredCard === project.id
+                          ? "opacity-100 translate-y-0 scale-100"
+                          : "opacity-0 translate-y-4 scale-95 pointer-events-none"
+                      }`}
+                    >
+                      <p className="text-white text-sm leading-relaxed w-full drop-shadow-lg">
+                        {project.description}
+                      </p>
+                    </div>
+
+                    {/* Commented out Explore More button */}
+                    {/* <button className="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white rounded-full py-3 px-6 flex items-center justify-center gap-2 transition-all group">
+                      <span className="text-sm font-medium">Explore More</span>
+                      <div className="w-8 h-8 rounded-full bg-[#51CFDF] flex items-center justify-center group-hover:bg-[#6dd9e8] transition-colors">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.5 9L7.5 6L4.5 3"
+                            stroke="white"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </button> */}
+                  </div>
                 </div>
               </div>
             ))}
@@ -329,6 +351,31 @@ export default function LatestProjects() {
       <style jsx>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
+        }
+        
+        @keyframes gradient-border {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        
+        @keyframes border-glow {
+          0%, 100% {
+            box-shadow: 0 0 20px rgba(81, 207, 223, 0.5), 
+                        0 0 40px rgba(81, 207, 223, 0.3),
+                        0 0 60px rgba(81, 207, 223, 0.1);
+          }
+          50% {
+            box-shadow: 0 0 30px rgba(81, 207, 223, 0.7), 
+                        0 0 50px rgba(81, 207, 223, 0.5),
+                        0 0 70px rgba(81, 207, 223, 0.2);
+          }
         }
       `}</style>
     </section>
