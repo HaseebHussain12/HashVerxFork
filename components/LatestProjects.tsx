@@ -246,7 +246,7 @@ export default function LatestProjects() {
                   {/* Hover overlay with black background - animated */}
                   <div
                     className={`absolute inset-0 rounded-lg bg-black transition-all duration-500 ${
-                      hoveredCard === project.id ? "opacity-90" : "opacity-0"
+                      hoveredCard === project.id ? "opacity-60" : "opacity-0"
                     }`}
                     style={{
                       transform: hoveredCard === project.id ? "scale(1)" : "scale(0.95)",
