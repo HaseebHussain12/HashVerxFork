@@ -2,15 +2,13 @@
 
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
-import codaImage from "../assets/projects/Coda.png";
-import dramaPopImage from "../assets/projects/DramaPop.png";
-import healthTapImage from "../assets/projects/HealthTap.png";
-import mahbubiImage from "../assets/projects/Mahbubi.png";
-import roadTrippersImage from "../assets/projects/RoadTrippers.png";
-import snoonuImage from "../assets/projects/Snoonu.png";
-import telegraphyImage from "../assets/projects/Telegraphy.png";
-import wishImage from "../assets/projects/Wish.png";
-import zedImage from "../assets/projects/Zed.png";
+import yunuakImage from "../assets/projects/Yunuak.png";
+import ftfImage from "../assets/projects/FTF.png";
+import hammersTongsImage from "../assets/projects/Hammers&Tongs.png";
+import hospitalityProQuotesImage from "../assets/projects/HospitalityProQuotes.png";
+import hrmsImage from "../assets/projects/HRMS.jpeg";
+import hospitalManagementImage from "../assets/projects/hospitalmanagementsystem.jpeg";
+import realEstateImage from "../assets/projects/TheRealEstateManagement.jpeg";
 
 interface Project {
   id: string;
@@ -28,7 +26,7 @@ const projects: Project[] = [
     name: "Yunuak",
     description:
       "Yunuak is a powerful retail POS and warehouse management system designed to simplify business operations. It allows users to create quotations, estimates, and orders while managing real-time inventory and product stock across warehouses. With both mobile and web access, businesses can monitor sales history, track inventory movement, and streamline daily operations from anywhere",
-    image: codaImage,
+    image: yunuakImage,
     type: "Productivity",
     features: [
       "Retail POS & Order Management",
@@ -42,7 +40,7 @@ const projects: Project[] = [
     name: "Forward Thinking Fitness",
     description:
       "Forward Fitness Thinking (FTF) is a smart gym and fitness management system for trainers, staff, and clients. It offers mobile apps and a web portal to manage workouts, nutrition plans, habit tracking, mood monitoring, and class scheduling. With AI-powered insights, analytics, and multi-platform access, FTF helps fitness businesses streamline operations, improve client engagement, and deliver better training results efficiently.",
-    image: dramaPopImage,
+    image: ftfImage,
     type: "Entertainment",
     features: [
       "Client & Staff Management System",
@@ -56,7 +54,7 @@ const projects: Project[] = [
     name: "Hammers & Tounges",
     description:
       "HT (Hammers & Tongs) is a powerful online auction platform for buyers, sellers, and administrators. Users can register, list items, and participate in live auctions with advanced bidding features like popcorn and phantom bidding. With real-time notifications, multi-winner support, and web and mobile access, it delivers a secure and scalable auction experience.",
-    image: healthTapImage,
+    image: hammersTongsImage,
     type: "Healthcare",
     features: [
       "Buyer, Seller & Admin Registration System",
@@ -70,7 +68,7 @@ const projects: Project[] = [
     name: "Hospitality ProQuotes",
     description:
       "Hospitality ProQuotes is an efficient order and quotation management system designed for hospitality businesses. It helps users create quotations, manage orders, generate receipts, and apply taxes, discounts, and markups accurately. With web and mobile access, businesses can streamline billing processes, improve pricing control, and manage customer transactions easily from one centralized platform.",
-    image: mahbubiImage,
+    image: hospitalityProQuotesImage,
     type: "Healthcare",
     features: [
       "Order Taking & Quotation Management",
@@ -84,7 +82,7 @@ const projects: Project[] = [
     name: "HRM",
     description:
       "This HRMS is a comprehensive web-based human resource management system designed to manage employees, attendance, communication, and performance tracking. It includes internal chat, calling, project management, and analytics tools to improve workforce productivity. The platform helps organizations streamline HR operations, monitor team performance, and enhance collaboration through one secure system.",
-    image: mahbubiImage,
+    image: hrmsImage,
     type: "Healthcare",
     features: [
       "Employee Tracking & Attendance Management",
@@ -98,7 +96,7 @@ const projects: Project[] = [
     name: "Hospital Management System",
     description:
       "The Hospital Management System is a complete digital solution for managing patients, appointments, billing, pharmacy, and hospital operations. It enables healthcare providers to maintain accurate records, streamline workflows, and improve patient care. With staff management, reporting, and centralized data access, hospitals and clinics can operate more efficiently and deliver better services.",
-    image: mahbubiImage,
+    image: hospitalManagementImage,
     type: "Healthcare",
     features: [
       "Patient Records & Appointment Management",
@@ -112,7 +110,7 @@ const projects: Project[] = [
     name: "Real Estate Management System",
     description:
       "The Real Estate Management System is a modern platform designed to manage property listings, clients, leads, sales, and rental operations efficiently. It provides centralized data, transaction tracking, and reporting tools to improve decision-making. With automation and analytics features, real estate businesses can enhance customer engagement, streamline workflows, and grow operations effectively.",
-    image: mahbubiImage,
+    image: realEstateImage,
     type: "Healthcare",
     features: [
       "Property Listing & Management",
