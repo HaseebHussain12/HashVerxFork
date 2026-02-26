@@ -110,6 +110,16 @@ textarea::placeholder {
   color: rgba(255, 255, 255, 0.6) !important;
 }
 
+/* Dark text for light backgrounds (e.g. white CTA banners) */
+.dark-text-on-light h3,
+.dark-text-on-light h2,
+.dark-text-on-light p {
+  color: #111827 !important;
+}
+.dark-text-on-light p {
+  color: #4b5563 !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

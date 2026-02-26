@@ -109,14 +109,14 @@ export const servicesData: Record<string, ServiceDetail> = {
     subtitle: "Odoo Implementation, Done Right.",
     slug: "odoo-erp-services",
     intro:
-      "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don’t hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line).",
+      "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don't hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line).",
     sections: [
       {
         id: "overview",
         title: "Overview",
         type: "overview",
         content:
-          "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don’t hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line)."
+          "Hashverx is a proud Odoo partner. Our certified Odoo experts handle everything from installation and configuration to migration, customization, and beyond. We don't hard code the system, giving you a flexible solution that perfectly synchronizes all your verticals (and improves your bottom line)."
       },
       {
         id: "odoo-services",
@@ -151,145 +151,145 @@ export const servicesData: Record<string, ServiceDetail> = {
           "Schedule a free consultation to discuss your Odoo requirements and get a tailored implementation plan."
       }
     ]
+  },
+  "ai-seo-automation": {
+    title: "AI, SEO & Automation Services",
+    subtitle: "Unlock business intelligence and automation with AI and SEO.",
+    slug: "ai-seo-automation",
+    intro:
+      "Accelerate business transformation with intelligent automation, predictive analytics, and machine learning. Hashverx helps you use AI to solve real business problems, optimize processes, and gain actionable insights that drive results.",
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        type: "overview",
+        content:
+          "Accelerate business transformation with intelligent automation, predictive analytics, and machine learning. Hashverx helps you use AI to solve real business problems, optimize processes, and gain actionable insights that drive results."
+      },
+      {
+        id: "what-we-automate",
+        title: "What We Automate",
+        type: "list",
+        items: ["Business Workflows", "Sales & CRM"]
+      },
+      {
+        id: "ai-seo-capabilities",
+        title: "AI & SEO Capabilities",
+        type: "list",
+        items: [
+          "AI Chatbots",
+          "AI Content & SEO",
+          "Technical SEO",
+          "Analytics & Reporting",
+          "Data & Documents",
+          "Customer Support"
+        ]
+      },
+      {
+        id: "business-benefits",
+        title: "Business Benefits",
+        type: "paragraph",
+        content:
+          "Reduce manual work, improve accuracy, and scale operations. Our AI and automation solutions deliver measurable ROI across industries."
+      },
+      {
+        id: "start-automation",
+        title: "Start Automation",
+        type: "paragraph",
+        content:
+          "Tell us your goals and we'll design an automation and AI strategy that fits your business."
+      }
+    ]
+  },
+  "data-scraping-web-crawling": {
+    title: "Data Scraping & Web Crawling",
+    subtitle: "Clean, structured data from the web—delivered your way.",
+    slug: "data-scraping-web-crawling",
+    intro:
+      "Working with HashVerx, you ensure predictably successful results each time. Our streamlined and thorough processes keep us competitive. HashVerx strives to optimize the web scraping and data analyzing process to make sure your time and investment are utilized most efficiently. By simplifying our strategies, we make outsourcing data scraping the best experience for you and your customers.",
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        type: "overview",
+        content:
+          "Working with HashVerx, you ensure predictably successful results each time. Our streamlined and thorough processes keep us competitive. HashVerx strives to optimize the web scraping and data analyzing process to make sure your time and investment are utilized most efficiently. By simplifying our strategies, we make outsourcing data scraping the best experience for you and your customers."
+      },
+      {
+        id: "data-sources",
+        title: "Data Sources",
+        type: "list",
+        items: ["Websites", "Marketplaces", "Public Platforms"]
+      },
+      {
+        id: "deliverables",
+        title: "Deliverables",
+        type: "list",
+        items: ["Clean Structured Data", "CSV, JSON, API Access"]
+      },
+      {
+        id: "automation",
+        title: "Automation",
+        type: "paragraph",
+        content:
+          "Scheduled crawls and automated pipelines so your data stays up to date without manual effort."
+      },
+      {
+        id: "request-sample",
+        title: "Request Sample",
+        type: "paragraph",
+        content:
+          "Not sure what's possible? Request a sample dataset for your use case and we'll show you the quality and format we deliver."
+      }
+    ]
+  },
+  "website-design-development": {
+    title: "Website Design & Development",
+    subtitle: "Modern, fast, and SEO-ready websites.",
+    slug: "website-design-development",
+    intro:
+      "Our full-stack web application development services include everything from ideation and design to development and launch. Our expert team of developers specialize in creating custom websites that are visually stunning, intuitive, and functional. Whether it's a static website or a dynamic web application, we use the latest technologies to build high-performance websites that deliver measurable results.",
+    sections: [
+      {
+        id: "overview",
+        title: "Overview",
+        type: "overview",
+        content:
+          "Our full-stack web application development services include everything from ideation and design to development and launch. Our expert team of developers specialize in creating custom websites that are visually stunning, intuitive, and functional. Whether it's a static website or a dynamic web application, we use the latest technologies to build high-performance websites that deliver measurable results."
+      },
+      {
+        id: "website-types",
+        title: "Website Types",
+        type: "list",
+        items: [
+          "Corporate Websites",
+          "Product / SaaS Websites",
+          "Landing Pages",
+          "CMS Websites"
+        ]
+      },
+      {
+        id: "tech-stack",
+        title: "Tech Stack",
+        type: "list",
+        items: ["React", "WordPress"]
+      },
+      {
+        id: "seo-ready",
+        title: "SEO Ready",
+        type: "paragraph",
+        content:
+          "All our websites are built with SEO best practices—speed, structure, and metadata—so you rank and attract the right traffic."
+      },
+      {
+        id: "view-work",
+        title: "View Work",
+        type: "paragraph",
+        content:
+          "Explore our portfolio of website projects and see the quality and variety we deliver."
+      }
+    ]
   }
-  // "ai-seo-automation": {
-  //   title: "AI, SEO & Automation Services",
-  //   subtitle: "Unlock business intelligence and automation with AI and SEO.",
-  //   slug: "ai-seo-automation",
-  //   intro:
-  //     "Transform your business with intelligent automation, AI-powered tools, and SEO that drives visibility. We serve HRMS, Hospital, Real Estate, Retail, Services, and more.",
-  //   sections: [
-  //     {
-  //       id: "overview",
-  //       title: "Overview",
-  //       type: "overview",
-  //       content:
-  //         "Transform your business with intelligent automation, AI-powered tools, and SEO that drives visibility. We serve HRMS, Hospital, Real Estate, Retail, Services, and more."
-  //     },
-  //     {
-  //       id: "what-we-automate",
-  //       title: "What We Automate",
-  //       type: "list",
-  //       items: ["Business Workflows", "Sales & CRM"]
-  //     },
-  //     {
-  //       id: "ai-seo-capabilities",
-  //       title: "AI & SEO Capabilities",
-  //       type: "list",
-  //       items: [
-  //         "AI Chatbots",
-  //         "AI Content & SEO",
-  //         "Technical SEO",
-  //         "Analytics & Reporting",
-  //         "Data & Documents",
-  //         "Customer Support"
-  //       ]
-  //     },
-  //     {
-  //       id: "business-benefits",
-  //       title: "Business Benefits",
-  //       type: "paragraph",
-  //       content:
-  //         "Reduce manual work, improve accuracy, and scale operations. Our AI and automation solutions deliver measurable ROI across industries."
-  //     },
-  //     {
-  //       id: "start-automation",
-  //       title: "Start Automation",
-  //       type: "paragraph",
-  //       content:
-  //         "Tell us your goals and we'll design an automation and AI strategy that fits your business."
-  //     }
-  //   ]
-  // },
-  // "data-scraping-web-crawling": {
-  //   title: "Data Scraping & Web Crawling",
-  //   subtitle: "Clean, structured data from the web—delivered your way.",
-  //   slug: "data-scraping-web-crawling",
-  //   intro:
-  //     "We collect, clean, and deliver web data from websites, marketplaces, and public platforms. Get structured data in CSV, JSON, or via API for your analytics and applications.",
-  //   sections: [
-  //     {
-  //       id: "overview",
-  //       title: "Overview",
-  //       type: "overview",
-  //       content:
-  //         "We collect, clean, and deliver web data from websites, marketplaces, and public platforms. Get structured data in CSV, JSON, or via API for your analytics and applications."
-  //     },
-  //     {
-  //       id: "data-sources",
-  //       title: "Data Sources",
-  //       type: "list",
-  //       items: ["Websites", "Marketplaces", "Public Platforms"]
-  //     },
-  //     {
-  //       id: "deliverables",
-  //       title: "Deliverables",
-  //       type: "list",
-  //       items: ["Clean Structured Data", "CSV, JSON, API Access"]
-  //     },
-  //     {
-  //       id: "automation",
-  //       title: "Automation",
-  //       type: "paragraph",
-  //       content:
-  //         "Scheduled crawls and automated pipelines so your data stays up to date without manual effort."
-  //     },
-  //     {
-  //       id: "request-sample",
-  //       title: "Request Sample",
-  //       type: "paragraph",
-  //       content:
-  //         "Not sure what's possible? Request a sample dataset for your use case and we'll show you the quality and format we deliver."
-  //     }
-  //   ]
-  // },
-  // "website-design-development": {
-  //   title: "Website Design & Development",
-  //   subtitle: "Modern, fast, and SEO-ready websites.",
-  //   slug: "website-design-development",
-  //   intro:
-  //     "Our full-stack web application development services include everything from ideation and design to development and launch. Our expert team of developers specialize in creating custom websites that are visually stunning, intuitive, and functional. Whether it’s a static website or a dynamic web application, we use the latest technologies to build high-performance websites that deliver measurable results.",
-  //   sections: [
-  //     {
-  //       id: "overview",
-  //       title: "Overview",
-  //       type: "overview",
-  //       content:
-  //         "Our full-stack web application development services include everything from ideation and design to development and launch. Our expert team of developers specialize in creating custom websites that are visually stunning, intuitive, and functional. Whether it’s a static website or a dynamic web application, we use the latest technologies to build high-performance websites that deliver measurable results."
-  //     },
-  //     {
-  //       id: "website-types",
-  //       title: "Website Types",
-  //       type: "list",
-  //       items: [
-  //         "Corporate Websites",
-  //         "Product / SaaS Websites",
-  //         "Landing Pages",
-  //         "CMS Websites"
-  //       ]
-  //     },
-  //     {
-  //       id: "tech-stack",
-  //       title: "Tech Stack",
-  //       type: "list",
-  //       items: ["React", "WordPress"]
-  //     },
-  //     {
-  //       id: "seo-ready",
-  //       title: "SEO Ready",
-  //       type: "paragraph",
-  //       content:
-  //         "All our websites are built with SEO best practices—speed, structure, and metadata—so you rank and attract the right traffic."
-  //     },
-  //     {
-  //       id: "view-work",
-  //       title: "View Work",
-  //       type: "paragraph",
-  //       content:
-  //         "Explore our portfolio of website projects and see the quality and variety we deliver."
-  //     }
-  //   ]
-  // },
   // "ui-ux-graphic-video-design": {
   //   title: "UI/UX, Graphic & Video Design",
   //   subtitle: "Design and video that engage and convert.",

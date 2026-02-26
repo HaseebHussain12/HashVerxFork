@@ -20,8 +20,6 @@ const service = servicesData[slug];
 const odooServices = service.sections.find((s) => s.id === 'odoo-services');
 const serviceItems = odooServices?.type === 'list' ? odooServices.items : [];
 const overviewCapabilities: OverviewCapability[] = serviceItems.map((item) => ({ title: item }));
-const industry = service.sections.find((s) => s.id === 'industry-solutions');
-const support = service.sections.find((s) => s.id === 'support-migration');
 const book = service.sections.find((s) => s.id === 'book-consultation');
 
 const HERO_IMAGE = odooMainImage;
@@ -69,7 +67,7 @@ export default function OdooLayout() {
       <ServiceTypesSection sectionTitle="Our Odoo Services" items={TYPES_ITEMS} />
 
       {/* What Makes Odoo an Attractive Choice Section */}
-      <section className="pt-16 pb-24 md:pt-20 md:pb-28 bg-transparent">
+      <section className="pt-16 pb-12 md:pt-20 md:pb-16 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">
             What Makes Odoo an Attractive Choice
@@ -157,7 +155,7 @@ export default function OdooLayout() {
         </div>
       </section>
 
-      <section ref={cardsRef} className="pt-16 pb-24 md:pt-20 md:pb-28 bg-transparent">
+      <section ref={cardsRef} className="pt-8 pb-24 md:pt-10 md:pb-28 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">What we offer</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -177,20 +175,9 @@ export default function OdooLayout() {
         </div>
       </section>
 
-      <section className="pt-16 pb-24 md:pt-20 md:pb-28 bg-transparent">
+      <section className="pt-8 pb-24 md:pt-10 md:pb-28 bg-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="p-10 md:p-14 rounded-3xl bg-[#0859B2] text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Industry solutions</h3>
-              <p className="text-white/90 leading-relaxed text-lg">{industry?.type === 'paragraph' ? industry.content : ''}</p>
-            </div>
-            <div className="p-10 md:p-14 rounded-3xl border-2 border-[#51CFDF]/30 bg-white/10 backdrop-blur-xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Support & migration</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">{support?.type === 'paragraph' ? support.content : ''}</p>
-            </div>
-          </div>
-
-          <div className="mt-20 text-center p-12 md:p-16 rounded-3xl bg-white/10 backdrop-blur-xl border-2 border-white/30">
+          <div className="text-center p-12 md:p-16 rounded-3xl bg-white/10 backdrop-blur-xl border-2 border-white/30">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Ready to streamline with Odoo?</h3>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg">{book?.type === 'paragraph' ? book.content : ''}</p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-[#51CFDF] hover:bg-[#6dd9e8] text-white px-10 py-5 rounded-lg font-semibold text-base">
