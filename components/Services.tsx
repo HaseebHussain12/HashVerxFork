@@ -62,7 +62,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
           {/* Left Side - Text Content */}
           <div className="space-y-6 md:col-span-1 lg:col-span-2">
-            <p className="text-sm font-semibold text-white uppercase tracking-wider">
+            <p className="text-sm font-semibold text-[#51CFDF] uppercase tracking-wider">
               Featured Insights
             </p>
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
@@ -73,6 +73,13 @@ export default function Services() {
             <p className="text-lg md:text-xl text-white">
               From Concept to Completion.
             </p>
+            <p className="text-base text-white/90 leading-relaxed">
+              Discover how we help businesses across diverse sectors—from fintech and healthcare to gaming and e-commerce—deliver cutting-edge solutions that drive growth and innovation.
+            </p>
+            <p className="text-base text-white/90 leading-relaxed">
+              Each case reflects our commitment to understanding unique industry challenges and delivering tailored, scalable outcomes that transform ideas into impactful digital products.
+            </p>
+            {/* Explore button - commented out per design
             <Link
               href="/success-stories"
               className="inline-flex items-center space-x-2 bg-[#51CFDF] hover:bg-[#6dd9e8] text-white px-8 py-4 rounded-lg font-semibold text-sm transition-all shadow-lg hover:shadow-xl hover:scale-105 transform uppercase tracking-wide"
@@ -92,6 +99,7 @@ export default function Services() {
                 />
               </svg>
             </Link>
+            */}
           </div>
 
           {/* Right Side - Solution Cards Grid (3 columns) */}
