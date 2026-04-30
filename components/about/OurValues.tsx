@@ -45,7 +45,7 @@ export default function OurValues() {
           }}
         >
           <h2
-            className={`text-3xl sm:text-4xl md:text-5xl text-center font-bold text-[#0859B2] mb-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            className={`text-3xl sm:text-4xl md:text-5xl text-center font-bold mb-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
           >
             Our Values
@@ -59,7 +59,7 @@ export default function OurValues() {
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <div className="w-1.5 h-1.5 bg-[#51CFDF] rounded-full flex-shrink-0 mt-2.5"></div>
-                <p className="text-base md:text-lg text-[#0859B2] leading-relaxed">{value}</p>
+                <p className="text-base md:text-lg leading-relaxed">{value}</p>
               </div>
             ))}
           </div>
